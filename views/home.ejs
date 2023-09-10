@@ -1,0 +1,12 @@
+<%- include layouts/header.ejs %>
+
+<main>
+    Home
+
+    <ul>    
+        <% users?.map((user)=>{ %>
+        <li><%= user.email %></li>
+        <%  }); %>    
+    </ul>
+</main>
+<%- include layouts/footer.ejs %>
